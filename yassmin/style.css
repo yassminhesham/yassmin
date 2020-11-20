@@ -1,0 +1,22 @@
+h1{
+    text-align: center; color: red; text-transform: uppercase;
+    background-color: bisque;
+}
+h3{
+    text-align: right;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F138733.jpg&imgrefurl=https%3A%2F%2Fwallpaperaccess.com%2Ffull-hd-desktop&tbnid=AfrmUGmc-PR3wM&vet=12ahUKEwis9bW4mZHtAhVy1uAKHSzRALkQMygTegUIARDCAQ..i&docid=whB24_onRLkLbM&w=1920&h=1080&q=background%20photo&ved=2ahUKEwis9bW4mZHtAhVy1uAKHSzRALkQMygTegUIARDCAQ");
+    background-repeat: repeat-y;
+    background-position: center;
+
+}
+.Heading{
+    font-size: 40px;
+    color: maroon;
+}
+#specialH{
+    background-color: floralwhite;
+}
