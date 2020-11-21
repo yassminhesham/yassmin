@@ -12,14 +12,16 @@
        <form action="#" method="get">
      
        <p>
-
+<fieldset>
+    <legend>Personal Information</legend>
           <label>
               Full Name : 
               <input type="text" name="txtname">
-
+              
           </label>
 
       </p>
+    
       <p>
         <label>
             Birthday date : 
@@ -35,13 +37,31 @@
 
         </label>
     </p>
+</fieldset>
     <p>
+    <fieldset>
+        <legend> Contact Information</legend>
         <label>
-            Address: 
-            <textarea rows="10" cols="20" name="txtarea"></textarea>>
+            Email: 
+            <textarea rows="3" cols="70" name="txtarea"></textarea>>
 
         </label>
     </p>
+<p>
+        <label>
+            Phone :
+            <textarea rows="3" cols="70" name="txtarea"></textarea>>
+        </label>
+    </p>
+    <p>
+        <label>
+            Address:
+            <textarea rows="3" cols="70" name="txtarea"></textarea>>
+        </label>
+    </p>
+</fieldset>
+<fieldset>
+    <legend>University Information</legend>
     <p>
         <label>
             Choose your faculy : 
@@ -50,11 +70,13 @@
                 <option>CS</option>
                 <option>Pharmacy</option>
             </select>
+        </fieldset>
             <p>
                 <label>
-                    <input type="submit">
+                    <input type="submit"> 
                 </label>
             </p>
+        
 
 
         </label>
