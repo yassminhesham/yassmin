@@ -50,3 +50,16 @@ li a{
     padding-bottom:14px;
 
 }
+li a:hover{
+    background-color:lightcyan;
+}
+li a.active{
+    background-color: linen;
+
+}
+div{
+    border:5px;
+    
+    
+
+}
