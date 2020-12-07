@@ -39,11 +39,11 @@ li{
 }
 a{
     text-decoration: none;
-    color:rgb(190, 208, 245);
+    color:rgb(165, 194, 252);
 }
 li a{
     display:block;
-    color:rgb(222, 226, 247);
+    color:rgb(108, 121, 187);
     padding-left:14px;
     padding-right:14px;
     padding-top:14px;
@@ -51,10 +51,10 @@ li a{
 
 }
 li a:hover{
-    background-color: rgb(240, 242, 250);
+    background-color: rgb(194, 204, 245);
 }
 li a.active{
-    background-color:rgb(183, 205, 252);
+    background-color:rgb(173, 193, 230);
     
 }
 div{
@@ -74,30 +74,30 @@ table{
 
 }
 thead{
-    background-color: rgb(230, 230, 236);
+    background-color: rgb(173, 173, 241);
     color: rgb(224, 224, 235);
 
 }
 
 tbody tr:nth-child(even){
-    background-color: rgb(233, 185, 193);
+    background-color: white;
    
 }
 tbody tr:nth-child(odd){
-    background-color: rgb(233, 211, 214);
+    background-color: white;
    
 }
 ul{
     list-style-type: none;
     border : 1px solid rgb(195, 184, 236);
-    background-color: rgb(176, 177, 248);
+    background-color: rgb(225, 225, 245);
     overflow:hidden;
 }
 
 div:not(.searchbar,#mytable){
     border:3px dotted;
     border-radius: 15px;
-    box-shadow: -15px -10px 0px dimgray;
+    box-shadow: -15px -10px 0px rgb(161, 125, 125);
     background-image:radial-gradient(white,blue)
 }
 
