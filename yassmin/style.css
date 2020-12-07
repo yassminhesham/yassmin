@@ -39,11 +39,11 @@ li{
 }
 a{
     text-decoration: none;
-    color:rgb(214, 113, 138);
+    color:rgb(190, 208, 245);
 }
 li a{
     display:block;
-    color:rgb(174, 62, 189);
+    color:rgb(222, 226, 247);
     padding-left:14px;
     padding-right:14px;
     padding-top:14px;
@@ -51,10 +51,10 @@ li a{
 
 }
 li a:hover{
-    background-color: rgb(223, 145, 197);
+    background-color: rgb(240, 242, 250);
 }
 li a.active{
-    background-color:rgb(214, 173, 186);
+    background-color:rgb(183, 205, 252);
     
 }
 div{
@@ -74,8 +74,8 @@ table{
 
 }
 thead{
-    background-color: whitesmoke;
-    color: grey;
+    background-color: rgb(230, 230, 236);
+    color: rgb(224, 224, 235);
 
 }
 
@@ -89,7 +89,50 @@ tbody tr:nth-child(odd){
 }
 ul{
     list-style-type: none;
-    border : 1px solid rgb(105, 98, 98);
-    background-color: white;
+    border : 1px solid rgb(195, 184, 236);
+    background-color: rgb(176, 177, 248);
     overflow:hidden;
+}
+
+div:not(.searchbar,#mytable){
+    border:3px dotted;
+    border-radius: 15px;
+    box-shadow: -15px -10px 0px dimgray;
+    background-image:radial-gradient(white,blue)
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+thead {
+    background-color: rgb(113, 188, 211);
+    color:white;
+}
+thead tr{
+    text-align: center;
+}
+tbody tr:nth-child(odd){
+    background-color: lightgrey;
+}
+
+.searchbar{
+    width:20%;
+    height: auto;
+    border:1px;
+    border-color:lightgrey;
+    border-style: solid;
+    padding: 0px 10px;
+    margin: 8px auto;
+    border-radius: 24px;
+    display:flexbox;
+}
+
+.searchbox{
+    width:80%;
+    padding:8px 8px;
+    border:none;
+    margin: 0 2px;
+    outline:none;
+     
 }

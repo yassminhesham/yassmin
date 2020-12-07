@@ -2,8 +2,11 @@
     <head>
         <title>Studentlist</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            var arr=[['20194929','Yassmin','FCIT','user.png'],['20192465','Ayssel','FCIT','user.png'],['20173344','Mohamed','FCIT','user.png'],['20191800','Youssef','FCIT','user.png']]
+        </script>
     </head>
-    <body>
+    <body onload="init();">
        <!--nav-->
        <nav>
            <ul>
@@ -15,50 +18,57 @@
        </nav>
        <!--#nav-->
        <hr>
+       <div class="searchbar">
+        <input type="search" class="searchbox">
+    </div>
+
+    <div id="mytable"> </div>
+    <!--Sec-->
+    
+   
+
+    <!--#sec-->
+    <hr>
+   
+    <script>
+        function init(){
+            var count=0;
+            var mytable='';
+            mytable+='<table border="1">';
+            mytable+='<thead>'+'<tr>'+
+                        '<td>ID</td>'+
+                     '<td>Name</td>'+
+                     '<td>Faculty</td>'+
+                     '<td>image</td>'+
+                     '</tr>'+
+                     '</thead>'+
+                     '<tbody>';
+                     for(let i=0;i<arr.length;i++){
+                         var studentID=arr[i][0];
+                         var studentName=arr[i][1];
+                         var studentFaculty=arr[i][2];
+                         var studentImage=arr[i][3];
+
+                         mytable+='<tr><td>'+studentID+'</td>'+
+                                  '<td>'+studentName+'</td>'+
+                                  '<td>'+studentFaculty+'</td>'+
+                                  '<td>'+'<img src="images//'+studentImage+'" alt="image of'+studentName+'" width="30px" height="30px">'+'</td></tr>'
+
+                             count++;
+                     }
+                     mytable+='</tbody>';
+                     mytable+='<tfoot><tr><td colspan="4">Total no. of Students:'+count+'</td></tr></tfoot></table>';
+
+                         document.getElementById("mytable").innerHTML= mytable ;
+        }
+    </script>
+
+ 
+
+ </body>
        <!--Sec-->
        
 
-       <table border="1">
-           <thead>
-               <tr>
-                   <td>Id</td>
-                   <td>name</td>
-                   <td>Faculty</td>
-                   <td>image</td>
-               </tr>
-
-           </thead>
-           <tbody>
-
-            <tr>
-                <td colspan="2">
-                20194929 Yassmin Hesham
-                </td>
-                <td>FCIT</td>
-                <td> <img src="images/user.png" alt="user icon" width="30px"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    20192465 Ayssel
-                </td>
-                <td>FCIT</td>
-                <td> <img src="images/user.png" alt="user icon" width="30px"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    20173344 Khaled
-                </td>
-                <td>FCIT</td>
-                <td> <img src="images/user.png" alt="user icon" width="30px"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    20191800 Youssef
-                </td>
-                <td>FCIT</td>
-                <td> <img src="images/user.png" alt="user icon" width="30px"></td>
-            </tr>
-           </tbody>
 
        <!--#sec-->
        <hr>
